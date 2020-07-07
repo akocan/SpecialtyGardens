@@ -1,0 +1,113 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+
+<%--         <section id="bodysection"> 
+
+              <section id="innerbodysection">--%>
+
+        <header>
+            <h4 id="lorainheader">Lorain County Community College</h4>
+            <h1 id="specialtyheader">Specialty</h1>
+            <h1 id="gardenheader">Gardens</h1>
+            <div class="dividerhead"></div>
+        
+        <div id="Nav">
+            <nav>
+                <ul>
+                    <li class="nav1">
+                        <h4><a href="Home.aspx">Home</a></h4>
+                    </li>
+                    <li class="nav2">
+                        <h4><a href="Gardens.aspx?ID=1">The Healing Garden</a></h4>
+                    </li>
+                     <li class="nav1">
+                        <h4><a href="Gardens.aspx?ID=2">The Habitat Garden</a></h4>
+                    </li>
+                     <li class="nav2">
+                        <h4><a href="Gardens.aspx?ID=3">The Experience Garden</a></h4>
+                    </li>
+                     <li class="nav1">
+                        <h4><a href="Gardens.aspx?ID=4">The Children & Culinary Garden</a></h4>
+                    </li>
+                     <li class="nav2">
+                        <h4><a href="Gardens.aspx?ID=5">The Meadow Preserve & Flora Trail</a></h4>
+                    </li>
+                     <li class="nav1">
+                        <h4><a href="Gardens.aspx?ID=6">The Prairie Preserve</a></h4>
+                    </li>
+                     <li class="nav2">
+                        <h4><a href="Gardens.aspx?ID=7">The Compost Cottage</a></h4>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+</header>
+<%--<div class="MasterDiv">--%>
+    <div id="CP1">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+    <div id="CP2">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+    <div id="CP3">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder3" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+  <div id="CP4">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder4" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+  <div id="CP5">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder5" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+  <div id="CP6">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder6" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+<%--</div>--%>
+
+ <%--       </section>
+ </section>--%>
+
+       <section id="footer">
+        <footer>
+            <div class="FooterDiv">
+                <p>Visit us in person at <a href="http://www.lorainccc.edu/">Lorain County Community College.</a></p>
+                <p><a href="Login.aspx">Administrator Login</a></p>
+                <p><asp:HyperLink ID="AddPlantHyperLink" runat="server" NavigateUrl="~/AddPlant.aspx" >Add Plant</asp:HyperLink></p>
+                <p><asp:LinkButton ID="LogoutButton" runat="server" OnClick="LogoutButton_Click">Logout</asp:LinkButton></p>
+                <p>Lorain County Community College's SPECIALTY GARDENS: 2018</p>
+            </div>
+        </footer>
+       </section>
+
+    </form>
+</body>
+</html>
